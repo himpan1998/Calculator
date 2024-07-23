@@ -6,6 +6,7 @@
 
 body {
   background-color: black;
+  font-family: Arial, sans-serif;
 }
 
 .calculator-section {
@@ -14,16 +15,22 @@ body {
   background-color: transparent;
   border: none;
   box-shadow: -1px -1px 10px rgba(189, 97, 97, 0.5);
+  max-width: 100%;
+  width: 400px;
+  /* Set a max-width for better responsiveness */
 }
+
 #input {
   width: 100%;
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 100%;
   height: 100px;
   background: transparent;
   text-align: center;
   color: white;
   cursor: pointer;
+  font-size: 2rem;
+  /* Adjust font size for better readability */
 }
 
 button {
@@ -32,12 +39,20 @@ button {
   margin: 10px;
   padding: 10px;
   height: 60px;
-  width: 80px;
+  width: 60px;
+  /* Adjust width for better responsiveness */
   border-radius: 50%;
   background: transparent;
   box-shadow: 6px 6px 10px rgba(190, 97, 97, 1),
     -6px -6px 10px rgba(190, 97, 97, 1);
   cursor: pointer;
+  font-size: 1.5rem;
+  /* Adjust font size for better readability */
+}
+
+button:nth-child(4n) {
+  /* Add some margin to the rightmost buttons */
+  margin-right: 0;
 }
 
 .container {
@@ -46,4 +61,42 @@ button {
   height: 100vh;
   width: 100%;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .calculator-section {
+    width: 90%;
+  }
+
+  button {
+    margin: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    /* Further adjust for smaller screens */
+  }
+
+  #input {
+    height: 80px;
+    font-size: 1.5rem;
+    /* Adjust input font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    margin: 3px;
+    padding: 3px;
+    height: 40px;
+    width: 40px;
+    font-size: 1rem;
+    /* Further adjust for smaller screens */
+  }
+
+  #input {
+    height: 60px;
+    font-size: 1.2rem;
+    /* Adjust input font size for smaller screens */
+  }
 }
