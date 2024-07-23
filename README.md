@@ -10,9 +10,11 @@
 
 - To get started with the calculator, follow these steps:
 
-- Clone the Repository: git clone https://github.com/himpan1998/Calculator
-
+- Clone the Repository: git clone https://github.com/himpan1998/Calculator.git
 - cd mycalculator
+
+  # To See Demo :
+Link : https://calculatorhimanshu.netlify.app/
 
 # Install Dependencies
 
